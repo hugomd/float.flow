@@ -4,7 +4,7 @@
 [![styled with prettier][prettier.icon]][prettier.url]
 
 
-Library provides `float` [opquae type alias][] for `number` and set of functions
+Library provides `float` [opaque type alias][] for `number` and a set of functions
 to work with `float` type values.
 
 
@@ -23,7 +23,7 @@ Library exposes `float`, a subtype of a `number`.
 
 ### `Float.parseFloat(string):?float`
 
-Try to turn given string into a `float`, unlike built-in `parseFloat` this function never return `NaN` or an `Infinity`, but rather retuns `null` (`?` portion of `?float`). It also unlike built-in `parseFloat` fails (returns `null`) on strings than aren't numbers like `"0what?"`.
+Try to turn given string into a `float`. Unlike the built-in `parseFloat`, this function will never return `NaN` or  `Infinity`, but rather returns `null` (`?` portion of `?float`). It will also fail (return `null`) on strings than aren't numbers, like `"0what?"`.
 
 ```js
 Float.parseFloat("123") //> 123
@@ -80,7 +80,7 @@ Float.isFinite(7) //> true
 
     npm install float.flow
 
-[opquae type alias]:https://flow.org/en/docs/types/opaque-types/
+[opaque type alias]:https://flow.org/en/docs/types/opaque-types/
 
 [travis.icon]: https://travis-ci.org/Gozala/float.flow.svg?branch=master
 [travis.url]: https://travis-ci.org/Gozala/float.flow
